@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te love</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="fireworksDiv"></div>
+    <div class="container">
+
+        <h2>
+            <span id="words">¡FELIZ ANO 2022 AGARIMO!</span>
+        </h2>
+
+        <div class="contador">
+            <div class="cuadrado">
+                <p class="number" id="dias">6</p>
+                <span class="letra-contador">Días</span>
+            </div>
+            <div class="separador-contador">
+                <p>:</p>
+            </div>
+            <div class="cuadrado">
+                <p class="number" id="horas">23</p>
+                <span class="letra-contador">Horas</span>
+            </div>
+            <div class="separador-contador">
+                <p>:</p>
+            </div>
+            <div class="cuadrado">
+                <p class="number" id="minutos">12</p>
+                <span class="letra-contador">Minutos</span>
+            </div>
+            <div class="separador-contador">
+                <p>:</p>
+            </div>
+            <div class="cuadrado">
+                <p class="number" id="segundos">16</p>
+                <span class="letra-contador">Segundos</span>
+            </div>
+        </div>
+        <div class="carta-container">
+            <a href="javascript:abrir()"><img src="img/carta.gif" alt="carta" width="120px" height="120px"></a>
+        </div>
+
+
+        <div class="ventana" id="vent">
+            <div id="cerrar">
+                <a href="javascript:cerrar()"><img src="img/borrar.png" alt="cerrar" width="20px" height="20px"></a>
+            </div>
+
+            <p>
+                Para ti,
+            </p>
+            <p>Lo mejor de mí 2021 y de mi vida eres tú. </p>
+
+            <p> Gracias por acompañarme en este año, por todos los momentos que hemos vivido juntas, por las risas, abrazos, caricias, besos, por la resistencia y valentía ante los desafíos que nos hemos encontrado, gracias por hacer que vuelva a ilusionarme.</p>
+
+            <p> Recuerdo como si fuera ayer el primer abrazo que nos dimos, de lo bien que me sentí y de lo familiar que me resultó, fue mágico ese día. Mi corazón se emocionó tanto qué solo con recordarlo me dibuja una sonrisa. Nunca me había pasado algo
+                así. </p>
+
+            <p> Doy gracias cada día por seguir creciendo contigo. Sé que tengo todavía mucho que cambiar pero también sé que se puede y que lo estoy haciendo aunque sea escalón a escalón. Al igual que tú también lo haces, nos apoyamos, comunicamos y crecemos.</p>
+
+            <p> Quiero que sepas que invades mi mente cada segundo del día. Pienso en qué harás, en qué sentirás...</p>
+
+            <p> A veces los planes no salen como una quiere, hoy tenía que estar contigo y las circunstancias no han querido que así fuera. Pero no es como empieza sino como termina, y sé que este año 2022 va a terminar como queremos.</p>
+            <p> Y aunque no esté contigo físicamente, mi corazón lo está siempre. </p>
+
+            <p> Me encantaría dormir a tu lado y poder contemplarte con los rayos del sol acariciando tu rostro, recorrerte la piel con mis dedos y desear que tengas el mejor de los días con un beso. Cuando me besas es cómo estar en el paraíso</p>
+
+            <p> Eres mi alma gemela, puedes contar conmigo tanto para los buenos como para los malos momentos, hablar sin miedo y hacer lo que consideres porque siempre voy a estar para apoyarte en todo lo que necesites y sin fallarte.</p>
+
+            <p> Cuando eres feliz yo también lo soy, y si estás mal yo también lo estoy, eres parte de mí.
+                <p> Muero de amor cuando nos seguimos el juego y cuando nos sale nuestro lado bobalicón.</p>
+
+                <p> Estoy profundamente enamorada de ti y puedo afirmar que soy la mujer más feliz del universo por haber encontrado a una mujer como tú. Has arrasado y conquistado mi corazón. Y sigues haciéndolo cada día que pasa. Quiero una vida contigo
+                    dónde podamos ser nosotras y brillar como nunca antes.</p>
+                <p> VAMOS ALL-IN CON EL 2022, este es nuestro año, el año 6</p>
+
+                <p>P.D: Cómo puedes apreciar, hay un contador en la web que indica cuanto falta para vernos, y de aquí hasta que ese contador se termine, cada día habrá una nueva sorpresa en esta web. Hoy día 1 ha sido esta carta, el día 2 habrá otra cosa
+                    más y así día tras día hasta verte cuya sorpresa será en persona para celebrar nuestros 6 meses juntas y el nuevo año que entra.</p>
+
+                <p>Te love!!! <span style="color:red">&#x2764;</span></p>
+
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
+    <script>
+        // Para alternar el titulo
+        (function() {
+            var words = [
+                "¡FELIZ ANO 2022 AGARIMO!",
+                "¡FELIZ AÑO 2022 CARIÑO!"
+            ]
+
+            i = 0;
+            setInterval(function() {
+                $('#words').fadeOut(function() {
+                    $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                });
+            }, 3000)
+        })();
+
+        // Fuegos artificiales
+        const fireDiv = document.querySelector(".fireworksDiv");
+        const fireworks = new Fireworks(fireDiv, {
+            delay: {
+                min: 1,
+                max: 3
+            },
+            // rocketsPoint: 50,
+            trace: 2,
+            explosion: 5,
+            // speed: 0.000000001,
+            particles: 200,
+            // acceleration: 1.005,
+        });
+
+        fireworks.start();
+
+        setTimeout(function() {
+            fireworks.stop();
+        }, 600000);
+
+        // Contador
+        const days = document.getElementById("dias");
+        const hours = document.getElementById("horas");
+        const mins = document.getElementById("minutos");
+        const seconds = document.getElementById("segundos");
+
+        const newYear = "6 Jan 2022";
+
+        function countTimer() {
+            const newYearDate = new Date(newYear);
+            const currentDate = new Date();
+
+            const totalSeconds = (newYearDate - currentDate) / 1000;
+
+            const daysCalc = Math.floor(totalSeconds / 3600 / 24);
+            const hoursCalc = Math.floor(totalSeconds / 3600) % 24;
+            const minsCalc = Math.floor(totalSeconds / 60) % 60;
+            const secondsCalc = Math.floor(totalSeconds % 60);
+
+            days.innerHTML = daysCalc;
+            hours.innerHTML = hoursCalc;
+            mins.innerHTML = minsCalc;
+            seconds.innerHTML = secondsCalc;
+        }
+        countTimer();
+
+        setInterval(countTimer, 1000);
+
+
+        // Carta
+        function abrir() {
+            document.getElementById("vent").style.display = "block"
+        }
+
+        function cerrar() {
+            document.getElementById("vent").style.display = "none"
+        }
+    </script>
+
+
+</body>
+
+
+</html>

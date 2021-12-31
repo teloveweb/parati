@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fireworksDiv {
+    position: absolute;
+    background-color: #000220;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+}
+
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.container h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Moon Dance', cursive;
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px -2px 20px #ff2b2b;
+}
+
+
+/* Contador */
+
+.contador {
+    width: 650px;
+    max-width: 1160px;
+    margin: 0 auto;
+    color: #000220;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.separador-contador {
+    color: #fff;
+    font-size: 40px;
+}
+
+.cuadrado {
+    width: 110px;
+    background-color: rgba(255, 255, 255, 0.65);
+    font-family: 'Moon Dance', cursive;
+    border-radius: 5px;
+}
+
+.number {
+    font-size: 60px;
+    font-weight: 700px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.letra-contador {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+}
+
+.carta-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.ventana {
+    /* background-color: #e6ecee; */
+    /* background-color: #cdb999; */
+    background-image: url(../img/fondoCarta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 800px;
+    color: #000;
+    font-weight: 700;
+    text-align: justify;
+    padding: 30px;
+    height: 600px;
+    border-radius: 20px 3px 3px 20px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: none;
+    overflow: auto;
+    word-wrap: break-word;
+    top: -100px;
+    margin-top: -280px;
+}
+
+.ventana p {
+    font-size: 32px;
+    font-family: 'Oooh Baby', cursive;
+    margin: 15px;
+}
+
+#cerrar {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.ventana::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.ventana::-webkit-scrollbar-track {
+    background: #cfb17b;
+    /* color of the tracking area */
+    border-radius: 0 3px 3px 0;
+}
+
+.ventana::-webkit-scrollbar-thumb {
+    background-color: #e6403c;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #cfb17b;
+    /* creates padding around scroll thumb */
+}
