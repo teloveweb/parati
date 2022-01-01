@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Te love</title>
+    <title>Te love &#x2764;</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,6 +55,7 @@
         </div>
         <div class="carta-container">
             <a href="javascript:abrir()"><img src="img/carta.gif" alt="carta" width="120px" height="120px"></a>
+            <a class="separador-carta" href="javascript:abrirAnio6()"><img src="img/anio6.png" alt="año 6" width="90px" height="90px"></a>
         </div>
 
 
@@ -95,10 +96,70 @@
                     más y así día tras día hasta verte cuya sorpresa será en persona para celebrar nuestros 6 meses juntas y el nuevo año que entra.</p>
 
                 <p>Te love!!! <span style="color:red">&#x2764;</span></p>
-
-
-
         </div>
+
+        <div class="ventana" id="anio6">
+            <div id="cerrar">
+                <a href="javascript:cerrarAnio6()"><img src="img/borrar.png" alt="cerrar" width="20px" height="20px"></a>
+            </div>
+
+            <h3>Numerología 2022: el nuevo año de energía 6</h3>
+
+            <p>Antes que nada, la explicación de por qué hoy te comparto esta información, me hizo mucha ilusión aquel día en el que nos pusimos con el libro que tienes de numerología y como dos almas curiosas por naturaleza que somos, nos pusimos a realizar
+                nuestros cálculos y ver el significado de nuestro camino y encontrarle el sentido.</p>
+
+            <p>Me gusta cuando nos ponemos a hacer cosas que van más allá de lo corriente, es difícil de explicar lo feliz que me hace el poder hacerlo, poder ir más allá contigo en tantos aspectos es algo que me tiene irresistiblemente loca por ti.</p>
+
+            <p>He estado por la tarde leyendo la información al respecto sobre lo que numerológicamente representa este año y te pongo a continuación, el conjunto de cosas que me han resultado interesantes.</p>
+
+            <p>¡Allá vamos!</p>
+            <p>Comienza un nuevo ciclo energético, un año de mayor equilibrio.</p>
+
+            <p>Ahora bien... Luego de la ruptura del año 4 y el alboroto creativo del año 5, el universo le brinda al planeta Tierra un anual número 6.</p>
+
+            <p>Esta vibración es completamente diferente a las anteriores. Aquí la consigna tiene que ver con la búsqueda del equilibrio entre las partes y el todo, la armonía, los nuevos valores, la familia, la empatía por el otro y la construcción de un
+                nuevo modelo existencial más contemplativo. Al número 6 no le gusta el conflicto: mueve un patrón emocional para resolver los aspectos de la vida.</p>
+
+            <p>Equilibrio en el sentido de la responsabilidad, lo que nos importa, lo que amamos, deseamos y queremos crear.</p>
+            <p>La búsqueda de lo que nos hace sentir plenxs y el balance en todas las áreas de nuestra vida.</p>
+
+            <p>Año donde se caen las máscaras, en el que nos vamos a cuestionar nuestra libertad y los límites impuestos.
+            </p>
+            <img src="img/mascara.jpg" alt="mascara" width="60%" style="margin: 0 auto; display: flex;">
+            <p>¿Qué aceptamos? ¿Qué es justo y qué no? ¿Qué hacemos con nuestra libertad?</p>
+
+            <p>La salud será un tema importante, nos haremos responsables de mejorar nuestra salud, prestaremos atención a nuestros cuerpos y a nuestros hábitos.</p>
+
+            <p>Conectaremos con las necesidades de nuestro corazón, las máscaras se caen para dar vida a quienes somos, personas más auténticas, reales, justas y responsables.</p>
+
+            <p>Según avanza el año veremos como todo se va equilibrando y entenderemos todo el poder que tenemos para hacer de este año un gran año.</p>
+
+            <h3>Plano personal</h3>
+
+            <p>La energía 6 rige nuestro mundo emocional, por lo que estaremos aprendiendo, sanando, cambiando, buscando balance en todo lo que tenga que ver con familia, relaciones, amor, equipos. Mirar más hacia adentro que hacia afuera.</p>
+
+            <p>Cada uno de nosotros estará poniendo límites también en algún área de su vida. ¿Qué relaciones quieres nutrir y cuáles quieres soltar? ¿Qué amas y cómo cuidas lo que amas? ¿Y qué no estás dispuesto a seguir tolerando? ¿A quién o a quiénes
+                requieres poner límites (sanos) y cómo puedes hacer esto?</p>
+
+            <p>Es un año de tomar fuerza, hacernos más fuertes internamente, física, mental y espiritualmente. Descubriendo quién eres, qué quieres y sobretodo hacia dónde vas.</p>
+
+            <p>Es un año para enfocarse en lo que SI quieres y dejar de ver lo que no quieres. Soltar los miedos, ganar confianza y crear una nueva realidad basada en expandir el amor en nuestras vidas.</p>
+
+
+            <p>Ahora vuelvo a escribirte yo, este es un año de equilibrio, donde crear un vínculo aún más fuerte y sano contigo cariño.</p>
+
+            <p>Enfocarnos en los que queremos e ir a por ello, yo quiero una vida contigo, un año en el que hacernos fuertes juntas. También crecer espiritualmente y en todos los ámbitos que podamos.</p>
+
+            <p>Fuera máscaras y bienvenida autenticidad que hay detrás. Me comprometo a ello y solo a darte amor e ilusión.</p>
+
+            <p>Llevamos 81 días sin café y podremos con cualquier reto que nos pongamos.</p>
+
+            <img src="img/oveja.gif" alt="oveja" width="40%" style="margin: 0 auto; display: flex;">
+
+            <p>Vamos a ser como esta oveja =D</p>
+            <p>Te love vidas!!! <span style="color:red">&#x2764;</span></p>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
@@ -173,8 +234,23 @@
             document.getElementById("vent").style.display = "block"
         }
 
+
         function cerrar() {
             document.getElementById("vent").style.display = "none"
+        }
+
+        function abrirAnio6() {
+            const diaHoy = new Date().getDate();
+            if (1 <= diaHoy) {
+                document.getElementById("anio6").style.display = "block"
+            }
+        }
+
+        function cerrarAnio6() {
+            const diaHoy = new Date().getDate();
+            if (1 <= diaHoy) {
+                document.getElementById("anio6").style.display = "none"
+            }
         }
     </script>
 
