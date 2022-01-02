@@ -56,6 +56,7 @@
         <div class="carta-container">
             <a href="javascript:abrir()"><img src="img/carta.gif" alt="carta" width="120px" height="120px"></a>
             <a class="separador-carta" href="javascript:abrirAnio6()"><img src="img/anio6.png" alt="año 6" width="90px" height="90px"></a>
+            <a class="separador-carta" href="javascript:abrirhoroscopo()"><img src="img/horos.png" alt="horoscopo" width="100px" height="100px"></a>
         </div>
 
 
@@ -160,6 +161,49 @@
             <p>Te love vidas!!! <span style="color:red">&#x2764;</span></p>
         </div>
 
+
+        <div class="ventana" id="horoscopo">
+            <div id="cerrar">
+                <a href="javascript:cerrarhoroscopo()"><img src="img/borrar.png" alt="cerrar" width="20px" height="20px"></a>
+            </div>
+
+            <h3>Aries y Aries <span style="color:red">&#x2764;</span></h3>
+
+            <p>Cuando dos Aries se juntan, hay muchas posibilidades de que, de un momento a otro, lleguen los fuegos artificiales.</p>
+
+            <p>El fuego es el elemento de Aries , por eso las personas nacidas bajo este signo del zodiaco son intensas y apasionadas, siempre listas para vivir momentos de aventura junto a su pareja. Los arianos son también fuertes y temperamentales, algo
+                que se refleja claramente en el plano afectivo.</p>
+
+            <p>Aries y Aries puede convertirse en la pareja perfecta. Necesitan a alguien fuerte a su lado, pero a la vez que no se pase de fuerte…</p>
+
+            <p>Se trata de una relación de igual a igual donde se mezclan, a la par, pasión y fogosidad.</p>
+
+            <p>Suelen ser personas que odian la falsedad y cualquier otra clase de artimañas: juntas pueden conseguir ser muy felices, siempre y cuando, no intenten someterse mutuamente. Aries tiene como virtud la pureza, así que cada vez que se demuestran
+                amor, saben que, sin duda, es sincero.</p>
+
+            <p>La <strong>compatibilidad aries con aries </strong>es muy favorable porque al tener las personalidades similares se complementan. Igualmente, las relaciones suelen durar mucho cuando se tratan de personas de estos dos signos porque se diferencian
+                del resto en que son líderes por naturaleza. </p>
+
+            <p><strong>Aries con aries en el amor </strong>rendirán buenos frutos porque son personas que están activas permanentemente y son apasionadas lo que alimentará el fuego de la pasión de manera constante.</p>
+            <p>Como son personas líderes de forma natural, generalmente no les gusta que los manden. Les cuesta mucho adaptarse a aquellas personas que son autoritarias por esta misma razón. Al ser así, <strong>aries con aries</strong> se sienten atraídos
+                siempre, no es raro ver dos personas de parejas con estos signos.</p>
+            <h3>Cómo es Aries en el amor</h3>
+
+            <p>- Las personas nacidas bajo el signo de Aries son directas e impacientes, por eso a los arianos en el amor les cuesta tanto esperar. Cuando quieren a alguien lo hacen con mucha intensidad, del mismo modo que cuando desean a una persona les
+                cuesta mucho aguardar con paciencia todo el proceso de cortejo. Suelen ir por lo que quieren, arriesgando siempre al 100%.</p>
+
+            <p>- Hay algo que cautiva de los aries en el amor: su intensa pasión. Son personas altamente sexuales, disfrutan mucho el contacto y el afecto y no escatiman en ofrecerle cariño a su pareja. Un ariano es muy sexual pero también cuenta con una
+                faceta romántica, por eso disfruta de los detalles y del tiempo en pareja.</p>
+
+            <p>- Recuerda que se trata de un signo muy directo que aprecia la honestidad. Los dramas, las confusiones, los secretos y las intrigas no sientan bien a los arianos.</p>
+
+            <p>Somos muy aries y utilizaremos nuestras fortalezas para crecer como pareja.</p>
+
+            <p>Te love millones!!! <span style="color:red">&#x2764;</span></p>
+
+            <img src="img/oveja.gif" alt="oveja" width="40%" style="margin: 0 auto; display: flex;">
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
@@ -250,6 +294,20 @@
             const diaHoy = new Date().getDate();
             if (1 <= diaHoy) {
                 document.getElementById("anio6").style.display = "none"
+            }
+        }
+
+        function abrirhoroscopo() {
+            const diaHoy = new Date().getDate();
+            if (1 <= diaHoy) {
+                document.getElementById("horoscopo").style.display = "block"
+            }
+        }
+
+        function cerrarhoroscopo() {
+            const diaHoy = new Date().getDate();
+            if (1 <= diaHoy) {
+                document.getElementById("horoscopo").style.display = "none"
             }
         }
     </script>
