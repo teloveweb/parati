@@ -90,6 +90,16 @@ body {
     text-shadow: 3px -2px 20px #16f37d;
 }
 
+.ventana2 h3 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Moon Dance', cursive;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px -2px 20px #070bff;
+}
+
 .separador-carta {
     margin-left: 50px;
     margin-top: 20px;
@@ -125,6 +135,47 @@ body {
     margin-top: -280px;
     overflow-y: scroll;
     scrollbar-color: #e6403c #cfb17b;
+}
+
+.ventana2 {
+    /* background-color: #e6ecee; */
+    /* background-color: #cdb999; */
+    background-image: url(../img/fondoplay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 800px;
+    color: #000;
+    font-weight: 700;
+    text-align: justify;
+    padding: 30px;
+    height: 600px;
+    border-radius: 20px 3px 3px 20px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: none;
+    overflow: auto;
+    word-wrap: break-word;
+    top: -100px;
+    margin-top: -280px;
+    overflow-y: scroll;
+    scrollbar-color: #e6403c #cfb17b;
+}
+
+.ventana2 iframe {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ventana-contenido {
+    background-color: rgb(241, 241, 241);
+    font-family: 'Oooh Baby', cursive;
+    border-radius: 5px;
+    font-size: 32px;
+    padding: 20px;
 }
 
 .ventana p {
