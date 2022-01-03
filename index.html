@@ -57,6 +57,7 @@
             <a href="javascript:abrir()"><img src="img/carta.gif" alt="carta" width="120px" height="120px"></a>
             <a class="separador-carta" href="javascript:abrirAnio6()"><img src="img/anio6.png" alt="año 6" width="90px" height="90px"></a>
             <a class="separador-carta" href="javascript:abrirhoroscopo()"><img src="img/horos.png" alt="horoscopo" width="100px" height="100px"></a>
+            <a class="separador-carta" href="javascript:abrirblas()"><img src="img/blas.png" alt="blas" width="100px" height="100px"></a>
         </div>
 
 
@@ -204,6 +205,23 @@
             <img src="img/oveja.gif" alt="oveja" width="40%" style="margin: 0 auto; display: flex;">
         </div>
 
+        <div class="ventana2" id="blas">
+            <div id="cerrar">
+                <a href="javascript:cerrarblas()"><img src="img/borrar.png" alt="cerrar" width="20px" height="20px"></a>
+            </div>
+
+            <div class="ventana-contenido">Después del duro día de hoy estudiando te mereces unas risas para desconectar, como no podía ser de otra manera había que meter sí o sí a Blas porque ha formado parte de muchos momentos y nos ha ayudado a superar situaciones convirtiéndolo
+                al final en un símbolo de amor.</div>
+
+            <h3>Te love vidas!!! Disfruta los vídeos<span style="color:red">&#x2764;</span>
+            </h3>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0L2Y11aeBFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NoPeq68yNhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
@@ -308,6 +326,20 @@
             const diaHoy = new Date().getDate();
             if (1 <= diaHoy) {
                 document.getElementById("horoscopo").style.display = "none"
+            }
+        }
+
+        function abrirblas() {
+            const diaHoy = new Date().getDate();
+            if (1 <= diaHoy) {
+                document.getElementById("blas").style.display = "block"
+            }
+        }
+
+        function cerrarblas() {
+            const diaHoy = new Date().getDate();
+            if (1 <= diaHoy) {
+                document.getElementById("blas").style.display = "none"
             }
         }
     </script>
