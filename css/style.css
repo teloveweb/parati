@@ -170,6 +170,41 @@ body {
     margin-right: auto;
 }
 
+.ventana3 {
+    background-image: url(../img/fondoestrella.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 800px;
+    color: #fff;
+    font-weight: 700;
+    text-align: justify;
+    padding: 30px;
+    height: 600px;
+    border-radius: 20px 3px 3px 20px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: none;
+    overflow: auto;
+    word-wrap: break-word;
+    top: -100px;
+    margin-top: -280px;
+    font-size: 32px;
+    font-family: 'Oooh Baby', cursive;
+    overflow-y: scroll;
+    scrollbar-color: #e6403c #cfb17b;
+}
+
+.ventana3 a {
+    color: #fff;
+}
+
+.ventana3 a:hover {
+    color: rgb(255, 255, 137);
+}
+
 .ventana-contenido {
     background-color: rgb(241, 241, 241);
     font-family: 'Oooh Baby', cursive;

@@ -58,6 +58,7 @@
             <a class="separador-carta" href="javascript:abrirAnio6()"><img src="img/anio6.png" alt="año 6" width="90px" height="90px"></a>
             <a class="separador-carta" href="javascript:abrirhoroscopo()"><img src="img/horos.png" alt="horoscopo" width="100px" height="100px"></a>
             <a class="separador-carta" href="javascript:abrirblas()"><img src="img/blas.png" alt="blas" width="100px" height="100px"></a>
+            <a class="separador-carta" href="javascript:abrirhorchino()"><img src="img/corazon.gif" alt="corazon" width="100px" height="100px"></a>
         </div>
 
 
@@ -222,6 +223,26 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NoPeq68yNhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
+        <div class="ventana3" id="horoscopochino">
+            <div id="cerrar">
+                <a href="javascript:cerrarhorchino()"><img src="img/borrar.png" alt="cerrar" width="20px" height="20px"></a>
+            </div>
+
+            <h3>Todo para mi amor</h3>
+            <p>Por ser muy guaba y como vamos a dejar las pelis de miedo, he pensado en que podemos empezar este 2022 con algunas de estas películas.</p>
+
+            <a href="https://lesbicanarias.es/reportaje/peliculas-lesbicas-netflix/"> Pelis de netflix con temática L</a><br><br>
+            <a href="https://lesbicanarias.es/2020/03/14/5-peliculas-lesbicas-divertidas-y-con-final-feliz-para-olvidarte-del-coronavirus/">Pelis divertidas para ver en 2022</a><br><br>
+            <a href="https://lesbicanarias.es/reportaje/series-lesbicas/">Series de temática L que podemos ver el 2022</a><br><br>
+            <a href="https://www.fotogramas.es/noticias-cine/a34560916/peliculas-netflix-2021/">40 mejores películas de netflix</a><br><br>
+            <a href="https://www.esquire.com/es/actualidad/cine/a30908858/netflix-peliculas-buenas-actuales-critica/">Películas alabadas por la crítica</a>
+
+            <h3>Te love un mundo!!! <span style="color:red">&#x2764;</span>
+            </h3>
+        </div>
+
+
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
@@ -268,7 +289,7 @@
         const mins = document.getElementById("minutos");
         const seconds = document.getElementById("segundos");
 
-        const newYear = "6 Jan 2022";
+        const newYear = "19 Jan 2022";
 
         function countTimer() {
             const newYearDate = new Date(newYear);
@@ -340,6 +361,20 @@
             const diaHoy = new Date().getDate();
             if (1 <= diaHoy) {
                 document.getElementById("blas").style.display = "none"
+            }
+        }
+
+        function abrirhorchino() {
+            const diaHoy = new Date().getDate();
+            if (1 <= diaHoy) {
+                document.getElementById("horoscopochino").style.display = "block"
+            }
+        }
+
+        function cerrarhorchino() {
+            const diaHoy = new Date().getDate();
+            if (1 <= diaHoy) {
+                document.getElementById("horoscopochino").style.display = "none"
             }
         }
     </script>
